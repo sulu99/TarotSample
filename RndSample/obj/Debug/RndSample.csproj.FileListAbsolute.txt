@@ -1,0 +1,10 @@
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\bin\Debug\RndSample.exe.config
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\bin\Debug\RndSample.exe
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\bin\Debug\RndSample.pdb
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.csproj.AssemblyReference.cache
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.Form1.resources
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.Properties.Resources.resources
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.csproj.GenerateResource.cache
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.csproj.CoreCompileInputs.cache
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.exe
+C:\Users\Susan.Llewellyn@esd.wa.gov\source\repos\Sample\RndSample\obj\Debug\RndSample.pdb
