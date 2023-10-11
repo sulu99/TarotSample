@@ -20,6 +20,7 @@ namespace Sample
     public partial class frmMain : Form
     {
         System.Security.Cryptography.RandomNumberGenerator CryptoRNG;
+        int CurrentFormState = 0;  // 0 means form is shrunken size. 1 is the bigger size.
 
         /// <summary>
         /// The frmMain method sets up the UI components of the form and creates any object instances it needs.
@@ -31,6 +32,10 @@ namespace Sample
             {
                 CryptoRNG = RandomNumberGenerator.Create();
             }
+
+            // Ensure that the Initial Form State is the smaller one.
+            CurrentFormState = 0;
+            ShrinkForm();
         }
 
         private void drawOneToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1792,6 +1797,74 @@ namespace Sample
             bool isReversed = DetermineReversal();
             lblSummary.Text = GetSummary(index, isReversed);
             lblQuote.Text = GetQuotation(index);
+        }
+
+        /// <summary>
+        /// Creates the basic Tarot Journal data for pasting into Notepad, so the user can make their own tarot journal entries every time they draw a card.
+        /// </summary>
+        /// <param name="sender">menu item</param>
+        /// <param name="e">menu item</param>
+        private void createTarotJournalDataAndCopyToClipboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 1. The info to copy will be:
+            // 2. The Intent of the Card Drawn
+            // 3. The Card Drawn - it's name.
+            // 4. The Card Summary - do I include the quotation? not right now.
+            // 5. My Interpretation on what card I drew.
+
+            // 1. create a variable to hold the final string.
+            string src = string.Empty;
+
+            // 2. get the Intent first.
+            src = "Reason for Drawing a Card (Intention)" + txtIntent.Text + "\n";
+
+            // 3. get which card was drawn
+            src += "Card Drawn Was:  " + lblName.Text + "\n";
+
+            // 4. get what the Card Means:
+            src += "Card Meaning or Summary: " + lblSummary.Text + "\n";
+
+            // 5. get what my interpretation
+            src += "Author's Interpretation is: " + txtInterpretation.Text + "\n";
+            
+            // 6. Get whay my decision is:
+            src += "My Decision is:  " + txtDecision.Text + "\n\n";
+
+            // 7. Copy to the ClipBoard
+            Clipboard.SetText(src); 
+
+        }
+
+        private void ShrinkForm()
+        {
+            this.Width = 562;
+            this.Height = 832;
+        }
+
+        /// <summary>
+        /// When the user clicks on the Reveal button, a hidden part of the form
+        /// is revealed - with a panel and new controls.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnReveal_Click(object sender, EventArgs e)
+        {
+            if(CurrentFormState == 0)
+            {
+                ShrinkForm();
+                btnReveal.Text = "Expand";
+                CurrentFormState = 1;
+                lblFormSize.Text = "Height = 832, Width = 565";
+  
+                return;
+            }
+            this.Width = 1045;
+            this.Height = 832;
+            CurrentFormState = 0;
+            btnReveal.Text = "Shrink";
+            lblFormSize.Text = "Height = 832, Width=1045";
+ 
+
         }
     }
 }
