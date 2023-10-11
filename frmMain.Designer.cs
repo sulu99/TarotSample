@@ -49,7 +49,7 @@
             this.commqandsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(427, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(536, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,7 +111,7 @@
             // 
             this.btnDraw.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDraw.Location = new System.Drawing.Point(347, 84);
+            this.btnDraw.Location = new System.Drawing.Point(465, 84);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(59, 23);
             this.btnDraw.TabIndex = 2;
@@ -127,7 +127,7 @@
             this.textBox1.Location = new System.Drawing.Point(27, 27);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(388, 51);
+            this.textBox1.Size = new System.Drawing.Size(497, 51);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Enter Your Intent for this card drawing.";
             // 
@@ -139,7 +139,7 @@
             this.textBox2.Location = new System.Drawing.Point(24, 666);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(388, 51);
+            this.textBox2.Size = new System.Drawing.Size(500, 51);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Enter your thoughts about why this card was drawn.";
             // 
@@ -148,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(427, 729);
+            this.ClientSize = new System.Drawing.Size(536, 729);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnDraw);
