@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Sample/v17/.suo
+/bin/Debug/Sample.exe
+/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/obj/Debug/Sample.csproj.AssemblyReference.cache
+/obj/Debug/Sample.csproj.GenerateResource.cache
+/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+/.vs/Sample/FileContentIndex/6934ec12-6db5-4afa-b06f-6d22263a4f36.vsidx
+/.vs/Sample/FileContentIndex/7fbcff68-7a8b-4c21-901f-ac6ecd34e842.vsidx
