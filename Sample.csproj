@@ -322,7 +322,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OverallStory.ico" />
-    <Content Include="Print_11009.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
