@@ -1336,11 +1336,11 @@ namespace Sample
             }
             else if (index == 53) // Three of Cups
             {
-                result = "Maybe our girlfriends are our soul mates and guys are just people to have fun with.  - Candace Bushnell (author of Sex and the City)";
+                result = "Maybe our girlfriends are our soul mates and guys are just people to have fun with.  --Candace Bushnell (author of Sex and the City)";
             }
             else if (index == 54)  // Four of Cups
             {
-                result = "A man, who realises the potential of his mind by means of introspection and contemplation, he does not lack self- confidence. He has control over his mind and he is able to realise its full potential. - Sama Veda (ancient Hindu scripture)";
+                result = "A man, who realises the potential of his mind by means of introspection and contemplation, he does not lack self-confidence. He has control over his mind and he is able to realise its full potential. --Sama Veda (ancient Hindu scripture)";
             }
             else if (index == 55) // Five of Cups
             {
@@ -1388,7 +1388,7 @@ namespace Sample
             }
             else if (index == 66) // Two of Swords
             {
-                result = "Each indecision brings its own delays and days are lost lamenting over lost days.. What you can do or think you can do, begin it. Por boldness has magic, power, and genius in it. - Johann Wolfgang von Goethe (writer)";
+                result = "Each indecision brings its own delays and days are lost lamenting over lost days.. What you can do or think you can do, begin it. For boldness has magic, power, and genius in it. - Johann Wolfgang von Goethe (writer)";
             }
             else if (index == 67) // Three of Swords
             {
@@ -1416,7 +1416,7 @@ namespace Sample
             }
             else if (index == 73)  // Nine of Swords
             {
-                result = "The task of worrying is to come up with positive solutions for life's perils by anticipating dangers before they arise. If we are preoccupied by worries, we have much less attention to expend on figuring out the answers. Our worries become self- fulfilling prophecies, propelling us toward the very disaster they predict. - Daniel Goleman (author and psychologist)";
+                result = "The task of worrying is to come up with positive solutions for life's perils by anticipating dangers before they arise. If we are preoccupied by worries, we have much less attention to expend on figuring out the answers. Our worries become self-fulfilling prophecies, propelling us toward the very disaster they predict. - Daniel Goleman (author and psychologist)";
             }
             else if (index == 74) // Ten of Swords
             {

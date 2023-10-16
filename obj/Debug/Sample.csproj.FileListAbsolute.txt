@@ -1,5 +1,4 @@
 C:\Users\sulu\source\repos\TarotSample\obj\Debug\Sample.csproj.AssemblyReference.cache
-C:\Users\sulu\source\repos\TarotSample\obj\Debug\Sample.csproj.SuggestedBindingRedirects.cache
 C:\Users\sulu\source\repos\TarotSample\obj\Debug\Sample.frmMain.resources
 C:\Users\sulu\source\repos\TarotSample\obj\Debug\Sample.csproj.GenerateResource.cache
 C:\Users\sulu\source\repos\TarotSample\bin\Debug\Sample.exe.config

@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.commqandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drawOneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblQuote = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.btnDraw = new System.Windows.Forms.Button();
             this.txtIntent = new System.Windows.Forms.TextBox();
             this.txtInterpretation = new System.Windows.Forms.TextBox();
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtDecision = new System.Windows.Forms.TextBox();
             this.btnReveal = new System.Windows.Forms.Button();
             this.lblFormSize = new System.Windows.Forms.Label();
@@ -74,6 +74,13 @@
             this.drawOneToolStripMenuItem.Text = "&Draw One";
             this.drawOneToolStripMenuItem.Click += new System.EventHandler(this.drawOneToolStripMenuItem_Click);
             // 
+            // createTarotJournalDataAndCopyToClipboardToolStripMenuItem
+            // 
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Name = "createTarotJournalDataAndCopyToClipboardToolStripMenuItem";
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Size = new System.Drawing.Size(328, 22);
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Text = "&Create Tarot Journal Data and Copy to Clipboard";
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -99,7 +106,7 @@
             this.lblQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuote.Location = new System.Drawing.Point(112, 108);
             this.lblQuote.Name = "lblQuote";
-            this.lblQuote.Size = new System.Drawing.Size(164, 112);
+            this.lblQuote.Size = new System.Drawing.Size(325, 112);
             this.lblQuote.TabIndex = 4;
             this.lblQuote.Text = "Quote";
             // 
@@ -149,13 +156,6 @@
             this.txtInterpretation.TabIndex = 3;
             this.txtInterpretation.Text = "Enter your thoughts about why this card was drawn.";
             // 
-            // createTarotJournalDataAndCopyToClipboardToolStripMenuItem
-            // 
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Name = "createTarotJournalDataAndCopyToClipboardToolStripMenuItem";
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Size = new System.Drawing.Size(328, 22);
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Text = "&Create Tarot Journal Data and Copy to Clipboard";
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem_Click);
-            // 
             // txtDecision
             // 
             this.txtDecision.BackColor = System.Drawing.Color.Black;
@@ -164,7 +164,7 @@
             this.txtDecision.Location = new System.Drawing.Point(24, 732);
             this.txtDecision.Multiline = true;
             this.txtDecision.Name = "txtDecision";
-            this.txtDecision.Size = new System.Drawing.Size(500, 34);
+            this.txtDecision.Size = new System.Drawing.Size(500, 49);
             this.txtDecision.TabIndex = 6;
             this.txtDecision.Text = "What is Your Decision Based on above?";
             // 
