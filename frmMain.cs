@@ -20,6 +20,10 @@ namespace Sample
     public partial class frmMain : Form
     {
         System.Security.Cryptography.RandomNumberGenerator CryptoRNG;
+
+        /// <summary>
+        /// The frmMain method sets up the UI components of the form and creates any object instances it needs.
+        /// </summary>
         public frmMain()
         {
             InitializeComponent();
