@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Sample/v17/.suo
+/.vs/Sample/v17/.suo
+/bin/Debug/Sample.exe
+/.vs/Sample/FileContentIndex/read.lock
+/.vs/Sample/FileContentIndex/5520f280-6b43-4c35-ad0c-088363355bca.vsidx
+/.vs/Sample/FileContentIndex/81b2bbaf-3f9d-4b60-bc4e-32d802a40231.vsidx
+/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/obj/Debug/Sample.csproj.GenerateResource.cache
+/obj/Debug/Sample.csproj.SuggestedBindingRedirects.cache
