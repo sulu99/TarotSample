@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\bin\\Debug"
   ],
+  "SelectedNode": "\\Sample.sln",
   "PreviewInSolutionExplorer": false
 }

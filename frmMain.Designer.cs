@@ -33,7 +33,9 @@
             this.commqandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drawOneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buildMRUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRUArticleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblName = new System.Windows.Forms.Label();
             this.lblQuote = new System.Windows.Forms.Label();
             this.lblSummary = new System.Windows.Forms.Label();
@@ -44,6 +46,9 @@
             this.btnReveal = new System.Windows.Forms.Button();
             this.lblFormSize = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtMRU = new System.Windows.Forms.TextBox();
+            this.searchSuitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +56,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.commqandsToolStripMenuItem});
+            this.commqandsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(549, 24);
@@ -62,7 +68,8 @@
             // 
             this.commqandsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.drawOneToolStripMenuItem,
-            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem});
+            this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem,
+            this.buildMRUToolStripMenuItem});
             this.commqandsToolStripMenuItem.Name = "commqandsToolStripMenuItem";
             this.commqandsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.commqandsToolStripMenuItem.Text = "&Commands";
@@ -81,15 +88,27 @@
             this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Text = "&Create Tarot Journal Data and Copy to Clipboard";
             this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.createTarotJournalDataAndCopyToClipboardToolStripMenuItem_Click);
             // 
-            // pictureBox1
+            // buildMRUToolStripMenuItem
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 112);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.buildMRUToolStripMenuItem.Name = "buildMRUToolStripMenuItem";
+            this.buildMRUToolStripMenuItem.Size = new System.Drawing.Size(328, 22);
+            this.buildMRUToolStripMenuItem.Text = "&Build MRU";
+            this.buildMRUToolStripMenuItem.Click += new System.EventHandler(this.buildMRUToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mRUArticleToolStripMenuItem,
+            this.searchSuitsToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // mRUArticleToolStripMenuItem
+            // 
+            this.mRUArticleToolStripMenuItem.Name = "mRUArticleToolStripMenuItem";
+            this.mRUArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mRUArticleToolStripMenuItem.Text = "&MRU Article";
             // 
             // lblName
             // 
@@ -170,7 +189,7 @@
             // 
             // btnReveal
             // 
-            this.btnReveal.Location = new System.Drawing.Point(362, 305);
+            this.btnReveal.Location = new System.Drawing.Point(362, 259);
             this.btnReveal.Name = "btnReveal";
             this.btnReveal.Size = new System.Drawing.Size(91, 46);
             this.btnReveal.TabIndex = 7;
@@ -181,7 +200,7 @@
             // lblFormSize
             // 
             this.lblFormSize.AutoSize = true;
-            this.lblFormSize.Location = new System.Drawing.Point(359, 354);
+            this.lblFormSize.Location = new System.Drawing.Point(359, 308);
             this.lblFormSize.Name = "lblFormSize";
             this.lblFormSize.Size = new System.Drawing.Size(105, 13);
             this.lblFormSize.TabIndex = 8;
@@ -194,12 +213,42 @@
             this.panel1.Size = new System.Drawing.Size(471, 766);
             this.panel1.TabIndex = 9;
             // 
+            // txtMRU
+            // 
+            this.txtMRU.BackColor = System.Drawing.Color.Black;
+            this.txtMRU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMRU.ForeColor = System.Drawing.Color.LemonChiffon;
+            this.txtMRU.Location = new System.Drawing.Point(323, 339);
+            this.txtMRU.Multiline = true;
+            this.txtMRU.Name = "txtMRU";
+            this.txtMRU.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMRU.Size = new System.Drawing.Size(201, 306);
+            this.txtMRU.TabIndex = 10;
+            // 
+            // searchSuitsToolStripMenuItem
+            // 
+            this.searchSuitsToolStripMenuItem.Name = "searchSuitsToolStripMenuItem";
+            this.searchSuitsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchSuitsToolStripMenuItem.Text = "Search Suits";
+            this.searchSuitsToolStripMenuItem.Click += new System.EventHandler(this.searchSuitsToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 108);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 112);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(549, 793);
+            this.Controls.Add(this.txtMRU);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblFormSize);
             this.Controls.Add(this.btnReveal);
@@ -240,5 +289,10 @@
         private System.Windows.Forms.Button btnReveal;
         private System.Windows.Forms.Label lblFormSize;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mRUArticleToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtMRU;
+        private System.Windows.Forms.ToolStripMenuItem buildMRUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchSuitsToolStripMenuItem;
     }
 }

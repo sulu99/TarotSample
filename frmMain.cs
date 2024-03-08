@@ -54,7 +54,20 @@ namespace Sample
             bool isReversed = DetermineReversal();
             lblSummary.Text = GetSummary(index, isReversed);
             lblQuote.Text = GetQuotation(index);
+            string motivation = getMRU(index, isReversed);
+            string reaction = string.Empty;
+            string action = string.Empty;
+        }
 
+        public string getMRU(int index, bool isRev)
+        {
+            string result = string.Empty;
+            string motivation = string.Empty;
+            string reaction = string.Empty;
+            string action = string.Empty;
+
+
+            return result;
         }
 
         public bool DetermineReversal()
@@ -1865,6 +1878,18 @@ namespace Sample
             lblFormSize.Text = "Height = 832, Width=1045";
  
 
+        }
+
+        private void buildMRUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuildMRU frm = new BuildMRU();
+            frm.Show();
+        }
+
+        private void searchSuitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchSuits frm = new SearchSuits();
+            frm.Show();
         }
     }
 }
